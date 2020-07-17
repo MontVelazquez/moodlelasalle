@@ -105,7 +105,8 @@
         {{/logourl}}
         {{^logourl}}
             <!-- <h2 class="card-header text-center">{{sitename}}</h2> -->
-            <h2 class="text-center">{{sitename}}</h2>
+             <!--<h2 class="text-center">{{sitename}}</h2>-->
+             <div id="plataforma" ></div> 
         {{/logourl}}
         
         <div class="card-body">
@@ -149,27 +150,29 @@
                                 autocomplete="username">
                         </div>
                         <div class="form-group">
-                            <label for="password" class="sr-only">{{#str}} password {{/str}}</label>
+                            <label for="password" class="sr-only ">{{#str}} password {{/str}}</label>
                             <input type="password" name="password" id="password" value=""
                                 class="form-control"
                                 placeholder={{#quote}}{{#str}}password{{/str}}{{/quote}}
                                 autocomplete="current-password">
                         </div>
+
+                        <button type="submit" class="btn btn-primary btn-block mt-3" id="loginbtn">{{#str}}login{{/str}}</button>
+                        
+
                         {{#rememberusername}}
                             <div class="rememberpass mt-3">
                                 <input type="checkbox" name="rememberusername" id="rememberusername" value="1" {{#username}}checked="checked"{{/username}} />
-                                <label for="rememberusername">{{#str}} rememberusername, admin {{/str}}</label>
+                                <label for="rememberusername">Recordar usuario</label>
+                                <!-- <label for="rememberusername">{{#str}} rememberusername, admin {{/str}}</label>-->
                             </div>
                         {{/rememberusername}}
-                        
                     
-                        <button type="submit" class="btn btn-primary btn-block mt-3" id="loginbtn">{{#str}}login{{/str}}</button>
-
-                        <br>
-                        <div class="text-left"><strong>¿NECESITAS AYUDA? <i>Tecnologías de la información. 502 93 33 Ext. 301</i></strong></div>
                         
+                        <div class="text-center" id="recuperar">¿Olvido su nombre de usuario o contraseña?</div>
+                        <div class="text-center" id="ayuda"> Tecnologías de la información.<br>  502 93 33 Ext. 301 </div>
                         <br>
-                        <div class="text-left"><strong>INDIVISA MANENTLO </strong> <i>UNIDO PERMANECE </i></div>
+                        <div class="text-center"><span id="indavisa">INDIVISA MANENTLO </span> <span id = "indavisa-t">UNIDO PERMANECE </span></div>
  
                     </form>
                 </div>
