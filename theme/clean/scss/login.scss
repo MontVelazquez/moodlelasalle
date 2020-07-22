@@ -46,21 +46,22 @@
     font-style: normal;
   }
 
-#loginone-wrapper {
-    font-family: Roboto, sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #414658;
-    background: #fff url([[pix:theme|login-background]]) no-repeat fixed 50%;
-    background-size: cover;
-    bottom: 0;
-    left: 0;
-    overflow: auto;
-    padding: 2rem;
-    position: fixed;
-    right: 0;
-    top: 0;
+    #loginone-wrapper {
+        // font-family: Roboto, sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #414658;
+        background: #fff url([[pix:theme|login-background]]) no-repeat fixed 50%;
+        background-size: cover;
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+        padding: 2rem;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
     .text-center {
         text-align: center;
     }
@@ -250,7 +251,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         background:url([[pix:theme|logo_plataforma]]);
-        // background: url(/moodle/theme/image.php/clean/theme/1594935287/logo_plataforma);
         width: 260px;
     }
 
@@ -288,7 +288,7 @@
         color: #102360;
         font-size: 9pt;
         text-align: center!important;
-        margin-top: 9.5px;
+        margin-top: 9.3px;
     }
 
     #indavisa{
@@ -300,7 +300,7 @@
     #indavisa-t{
         font-family: IndivisaDisplaySerif-ThinItalic;
         color: #102360;
-        font-size: 9.5pt;
+        font-size: 9.3pt;
     }
 
     #recuperar{
@@ -343,15 +343,175 @@
     .custom-radio-checkbox__text {
         margin-bottom: 0px;
     }
-    
 
-    @media (min-width: 576px){
-        .mb-sm-5, .my-sm-5 {
-            margin-bottom: 1rem!important;
-            margin-top: 1rem!important;
-        }
-        ::placeholder { color: #fff; }
+    .col-sm-3 {
+        flex: 0 0 25%;
+        max-width: 100%;
+    }
+
+    .mb-sm-5, .my-sm-5 {
+        margin-bottom: -1rem!important;
+        margin-top: 1rem!important;
     }
     
+    input::placeholder { color: #fff!important; }
     
-}
+    
+
+
+    @media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+        .col-sm-3 {
+            flex: 0 0 25%;
+            max-width: 100%;
+        }
+        input::placeholder { color: #fff!important; }
+        .login-content {
+            float: right;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            margin-right: -6rem;
+            width: 30rem;
+        }
+
+        #loginone-wrapper {
+            font-family: Roboto, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #414658;
+            background: #fff url([[pix:theme|tablet]]) no-repeat fixed 50%;
+            background-size: cover;
+            bottom: 0;
+            left: 0;
+            overflow: auto;
+            padding: 2rem;
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+    } 
+    @media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+        body{background: orange;}
+        .login-content {
+            float: right;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            margin-right: auto;
+            width: 30rem;
+        }
+        input::placeholder { color: #fff!important; }
+    }
+    
+    @media (max-width: 480px) {
+
+        #loginone-wrapper {
+            background: #fff url([[pix:theme|movil]]) no-repeat fixed 50%;
+            padding: 0;
+        }
+
+        .img {
+            background:url([[pix:theme|logotipo]]);
+        }
+
+        input::placeholder { color: #3fa9f5!important; }
+
+        .login-content {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: 0;
+            width: auto;
+            float: none;
+        }
+        
+        .login-inner-wrapper-2 {
+            background: none;
+            border-radius: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            height: 100%;
+            width: 100%;
+        }
+
+        #username, #password {
+            font-size: 8pt;
+            border-radius: .7rem;
+            display: inline-block;
+            color: #3fa9f5;
+            background-color: #fff;
+            width: 250px;
+            height: 35px;
+            font-family: IndivisaTextSans-Bold;
+            border: none;
+            border-radius: 2rem;
+        }
+
+        .input-icono {
+            background-repeat: no-repeat;
+            background-position: 4px center;
+            -webkit-background-size: 20px;
+            background-size: 20px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            background-color: #fff;
+            border-radius: 2rem;
+        }
+
+        #plataforma {
+            background-size: cover!important;
+            background:url([[pix:theme|logo_plataforma_movil]]);
+            height: 85px;
+            width: 300px;
+        }
+
+        #iconuser {
+            background-image: url([[pix:theme|ico_usuario_movil]]);
+        }
+
+        #iconpass {
+            background-image: url([[pix:theme|ico_candado_movil]]);
+        }
+
+        #iconpass, #recuperar{
+            color: #fff;
+            font-size: 10pt;
+        } 
+
+        #ayuda{
+            color: #fff;
+            font-size: 10pt;
+            margin-bottom: 2rem;
+        }
+
+        #indavisa, #indavisa-t{
+            color: #fff;
+            font-size: 10pt;
+        }
+
+        .form-group, .form-buttons, .path-admin .buttons, .fp-content-center form + div, div.backup-section + form {
+            width: 270px;
+            margin: auto;
+        }
+
+        .card-body, .userprofile .profile_tree section {
+            padding-top: 1.5rem;
+        }
+
+        #loginbtn {
+            border: none;
+            color: #fff;
+            background-color: #001d85;
+            width: 270px;
+            height: 35px;
+            border-radius: 2rem;
+        }
+
+        .rememberpass.mt-3 {
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: 10pt;
+        }
+
+     }
+    
+
