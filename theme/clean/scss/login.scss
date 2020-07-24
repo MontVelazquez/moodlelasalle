@@ -62,20 +62,21 @@
         right: 0;
         top: 0;
     }
-    .text-center {
+    #loginone-wrapper .text-center {
         text-align: center;
     }
-    .text-primary {
+
+    #loginone-wrapper .text-primary {
         color: #cccccc;;
     }
-    .text-muted {
+    #loginone-wrapper .text-muted {
         color: #9e9e9e;
     }
-    p {
+    #loginone-wrapper p {
         margin-top: 0;
         margin-bottom: 1rem;
     }
-    h2 {
+    #loginone-wrapper h2 {
         font-size: 1.975rem;
         margin-bottom: 1.3rem;
         font-family: inherit;
@@ -84,10 +85,10 @@
         margin-top: 0;
         color: #000000;
     }
-    hr {
+    #loginone-wrapper hr {
         display: none;
     }
-    .card {
+    #loginone-wrapper .card {
         background-color: inherit;
         border: none;
         .card-block {
