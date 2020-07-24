@@ -1,0 +1,517 @@
+
+@font-face {
+    font-family: 'IndivisaDisplaySerif-ThinItalic';
+    src: url([[font:theme|IndivisaDisplaySerif-ThinItalic.eot]]);
+    src: url([[font:theme|IndivisaDisplaySerif-ThinItalic.eot]]) format('embedded-opentype'),
+         url([[font:theme|IndivisaDisplaySerif-ThinItalic.woff]]) format('woff'),
+         url([[font:theme|IndivisaDisplaySerif-ThinItalic.woff2]]) format('woff2'),
+         url([[font:theme|IndivisaDisplaySerif-ThinItalic.ttf]]) format('truetype'),
+         url([[font:theme|IndivisaDisplaySerif-ThinItalic.svg]]) format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'IndivisaTextSans-Bold';
+    src: url([[font:theme|IndivisaTextSans-Bold.eot]]);
+    src: url([[font:theme|IndivisaTextSans-Bold.eot]]) format('embedded-opentype'),
+         url([[font:theme|IndivisaTextSans-Bold.woff]]) format('woff'),
+         url([[font:theme|IndivisaTextSans-Bold.woff2]]) format('woff2'),
+         url([[font:theme|IndivisaTextSans-Bold.ttf]]) format('truetype'),
+         url([[font:theme|IndivisaTextSans-Bold.svg]]) format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'IndivisaTextSans-Regular';
+    src: url([[font:theme|IndivisaTextSans-Regular.eot]]);
+    src: url([[font:theme|IndivisaTextSans-Regular.eot]]) format('embedded-opentype'),
+         url([[font:theme|IndivisaTextSans-Regular.woff]]) format('woff'),
+         url([[font:theme|IndivisaTextSans-Regular.woff2]]) format('woff2'),
+         url([[font:theme|IndivisaTextSans-Regular.ttf]]) format('truetype'),
+         url([[font:theme|IndivisaTextSans-Regular.svg]]) format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'IndivisaTextSans-RegularItalic';
+    src: url([[font:theme|IndivisaTextSans-RegularItalic.eot]]);
+    src: url([[font:theme|IndivisaTextSans-RegularItalic.eot]]) format('embedded-opentype'),
+         url([[font:theme|IndivisaTextSans-RegularItalic.woff]]) format('woff'),
+         url([[font:theme|IndivisaTextSans-RegularItalic.woff2]]) format('woff2'),
+         url([[font:theme|IndivisaTextSans-RegularItalic.ttf]]) format('truetype'),
+         url([[font:theme|IndivisaTextSans-RegularItalic.svg]]) format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+    #loginone-wrapper {
+        // font-family: Roboto, sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #414658;
+        background: #fff url([[pix:theme|login-background]]) no-repeat fixed 50%;
+        background-size: cover;
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+        padding: 2rem;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+    #loginone-wrapper .text-center {
+        text-align: center;
+    }
+
+    #loginone-wrapper .text-primary {
+        color: #cccccc;;
+    }
+    #loginone-wrapper .text-muted {
+        color: #9e9e9e;
+    }
+    #loginone-wrapper p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    #loginone-wrapper h2 {
+        font-size: 1.975rem;
+        margin-bottom: 1.3rem;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.1;
+        margin-top: 0;
+        color: #000000;
+    }
+    #loginone-wrapper hr {
+        display: none;
+    }
+    #loginone-wrapper .card {
+        background-color: inherit;
+        border: none;
+        .card-block {
+            padding: 0;
+        }
+    }
+    .col-xl-6,
+    .push-xl-3,
+    .m-2-md,
+    .col-sm-8,
+    .push-sm-2 {
+        left: 0;
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .col-md-4,
+    .push-md-3,
+    .col-md-4 {
+        left: 0;
+        float: none;
+        width: 100%;
+    }
+    .hidden-sm-down {
+        display: none;
+    }
+    .login-content {
+        float: right;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        margin-right: 6rem;
+        width: 30rem;
+    }
+    .login-inner-wrapper-2 {
+        background: #fff;
+        border-radius: 20px;
+        -webkit-box-shadow: 0 2px 10px 2px rgba(0,0,0,.35);
+        box-shadow: 0 2px 10px 2px rgba(0,0,0,.35);
+        height: 511px;
+        width: 306px;
+    }
+    .mb-2 {
+        margin-bottom: .6rem;
+    }
+    .login-icone {
+        display: inline-block;
+        font-size: 50px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        width: 100px;
+        vertical-align: middle;
+    }
+    .login-icone i {
+        color: #1976d2;
+        font-size: 99px;
+    }
+    .mb-3 {
+        margin-bottom: 1.2rem;
+    }
+
+    #username,
+    #password {
+        font-size: 8pt;
+        border-radius: .7rem;
+        display: inline-block;
+        color: #ffffff;
+        background-color: #3fa9f5;
+        width: 225px;
+        height: 30px;
+        font-family: IndivisaTextSans-Bold;
+
+        border: none;
+    }
+
+    #username, #password :focus { 
+        outline: none;
+     }
+
+     #username, #password :active { 
+        outline: none;
+     }
+     
+    #iconuser{
+        background-image: url([[pix:theme|ico_usuario]]);
+    }
+
+    #iconpass{
+        background-image: url([[pix:theme|ico_candado]]); 
+        margin-top: .5rem;
+    }
+    
+    .input-icono{
+        
+        background-repeat: no-repeat;
+        background-position: 4px center;
+        background-size: 20px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        padding-left: 25px;
+        background-color: #3fa9f5;
+        border-radius: .7rem;
+    }
+    
+    
+
+    #loginbtn {
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        margin: auto;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid #ffffff;
+        -webkit-transition: all .15s ease-in-out;
+        -o-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
+        text-transform: capitalize;
+        -webkit-appearance: button;
+        color: #fff;
+        background-color: #001d85;
+        display: block;
+        width: 225px;
+        height: 30px;
+        padding: 0;
+        font-size: 12pt;
+        border-radius: .7rem;
+        font-family: IndivisaTextSans-Bold;
+    }
+    .img {
+        margin: 0px;
+        margin: 0px auto;
+        border-radius: 0;
+        border: 0 solid #999;
+        height: 95px;
+        text-align: center;
+        -webkit-background-size: 100% 100%;
+        -webkit-background-size: cover;
+        background-size: 100% 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background:url([[pix:theme|logotipo]]);
+        width: 210px;
+    }
+
+    #plataforma {
+        margin: 0;
+        margin: 0 auto;
+        border-radius: 0;
+        margin-bottom: -20px;
+        border: 0 solid #999;
+        height: 65px;
+        text-align: center;
+        -webkit-background-size: 100% 100%;
+        -webkit-background-size: cover;
+        background-size: 100% 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background:url([[pix:theme|logo_plataforma]]);
+        width: 260px;
+    }
+
+    .img img{
+        width: 100%;
+    }
+
+    
+    .img img{
+        width:100%;
+    }
+
+    .forgetpass.mt-3{
+        display:none !important;
+    }
+    .rememberpass.mt-3 {
+        font-family: IndivisaTextSans-Bold;
+        color: #102360;
+        font-size: 9.5pt;
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .form-group {
+        width: 225px;
+        margin: auto;
+    }
+
+    .form-buttons, .path-admin .buttons, .fp-content-center form + div, div.backup-section + form {
+        margin-bottom: 0rem;
+    }
+    
+    #ayuda{
+        font-family: IndivisaTextSans-Regular;
+        color: #102360;
+        font-size: 9pt;
+        text-align: center!important;
+        margin-top: 9.3px;
+    }
+
+    #indavisa{
+        font-family: IndivisaTextSans-Regular;
+        color: #102360;
+        font-size: 9.5pt;
+    }
+
+    #indavisa-t{
+        font-family: IndivisaDisplaySerif-ThinItalic;
+        color: #102360;
+        font-size: 9.3pt;
+    }
+
+    #recuperar{
+        font-family: IndivisaTextSans-RegularItalic;
+        color: #102360;
+        font-size: 9pt;
+        text-align: center!important;
+        margin-top: 10px;
+    }
+
+    .custom-radio-checkbox {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        font-family: arial;
+        border-color: black;
+    }
+    
+
+    .custom-radio-checkbox > .custom-radio-checkbox__input {
+        display: none;
+    }
+
+    .custom-radio-checkbox > .custom-radio-checkbox__show {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: .3rem;
+        background-size: cover;
+
+        border: solid 1.5px;
+        border-color: #001d85;
+        border-radius: 1rem;
+    }
+
+    .custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--checkbox {
+        background-image: url([[pix:theme|ico_validar_casilla]]); 
+    }
+
+    .custom-radio-checkbox__text {
+        margin-bottom: 0px;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 25%;
+        max-width: 100%;
+    }
+
+    .mb-sm-5, .my-sm-5 {
+        margin-bottom: -1rem!important;
+        margin-top: 1rem!important;
+    }
+    
+    input::placeholder { color: #fff!important; }
+    
+    
+
+
+    @media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+        .col-sm-3 {
+            flex: 0 0 25%;
+            max-width: 100%;
+        }
+        input::placeholder { color: #fff!important; }
+        .login-content {
+            float: right;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            margin-right: -6rem;
+            width: 30rem;
+        }
+
+        #loginone-wrapper {
+            font-family: Roboto, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #414658;
+            background: #fff url([[pix:theme|tablet]]) no-repeat fixed 50%;
+            background-size: cover;
+            bottom: 0;
+            left: 0;
+            overflow: auto;
+            padding: 2rem;
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+    } 
+    @media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+        body{background: orange;}
+        .login-content {
+            float: right;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            margin-right: auto;
+            width: 30rem;
+        }
+        input::placeholder { color: #fff!important; }
+    }
+    
+    @media (max-width: 480px) {
+
+        #loginone-wrapper {
+            background: #fff url([[pix:theme|movil]]) no-repeat fixed 50%;
+            padding: 0;
+        }
+
+        .img {
+            background:url([[pix:theme|logotipo]]);
+        }
+
+        input::placeholder { color: #3fa9f5!important; }
+
+        .login-content {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: 0;
+            width: auto;
+            float: none;
+        }
+        
+        .login-inner-wrapper-2 {
+            background: none;
+            border-radius: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            height: 100%;
+            width: 100%;
+        }
+
+        #username, #password {
+            font-size: 8pt;
+            border-radius: .7rem;
+            display: inline-block;
+            color: #3fa9f5;
+            background-color: #fff;
+            width: 250px;
+            height: 35px;
+            font-family: IndivisaTextSans-Bold;
+            border: none;
+            border-radius: 2rem;
+        }
+
+        .input-icono {
+            background-repeat: no-repeat;
+            background-position: 4px center;
+            -webkit-background-size: 20px;
+            background-size: 20px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            background-color: #fff;
+            border-radius: 2rem;
+        }
+
+        #plataforma {
+            background-size: cover!important;
+            background:url([[pix:theme|logo_plataforma_movil]]);
+            height: 85px;
+            width: 300px;
+        }
+
+        #iconuser {
+            background-image: url([[pix:theme|ico_usuario_movil]]);
+        }
+
+        #iconpass {
+            background-image: url([[pix:theme|ico_candado_movil]]);
+        }
+
+        #iconpass, #recuperar{
+            color: #fff;
+            font-size: 10pt;
+        } 
+
+        #ayuda{
+            color: #fff;
+            font-size: 10pt;
+            margin-bottom: 2rem;
+        }
+
+        #indavisa, #indavisa-t{
+            color: #fff;
+            font-size: 10pt;
+        }
+
+        .form-group, .form-buttons, .path-admin .buttons, .fp-content-center form + div, div.backup-section + form {
+            width: 270px;
+            margin: auto;
+        }
+
+        .card-body, .userprofile .profile_tree section {
+            padding-top: 1.5rem;
+        }
+
+        #loginbtn {
+            border: none;
+            color: #fff;
+            background-color: #001d85;
+            width: 270px;
+            height: 35px;
+            border-radius: 2rem;
+        }
+
+        .rememberpass.mt-3 {
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: 10pt;
+        }
+
+     }
+     
